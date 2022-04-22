@@ -1,18 +1,24 @@
 let Dom = function(){
     let status = false;
 
-    this.number = function(num){
+    this.number = function(){
         num = +prompt('Введите номер квартиры');
         this.number = num;
         if (num < 1 || num > 40){
-            console.log('Такой квартире в этом подъезде нет')
+            console.log('Такой квартиры в этом подъезде нет');
+            setTimeout(this.off, 1000);
         }else 
-         status = true;
-         this.call;
+        setTimeout(this.call, 1000);
     },
 
     this.call = function(){
-        setTimeout(off, 30000);
+        console.log('----Ожидание ответа----')
+        setTimeout(this.talk, 5000);
+    },
+
+    this.talk = function(){
+        console.log('----Идет разговор----');
+        setTimeout(this.on, 5000);
     },
 
     this.code = function(){
@@ -32,7 +38,7 @@ let Dom = function(){
 
     this.off = function(){
         status = false;
-        console.log('Отключено')
+        console.log('Отключено');
     }
 
     this.info = function() {
@@ -41,4 +47,3 @@ let Dom = function(){
 }
 
 let dom = new Dom();
-dom.number();
