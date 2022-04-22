@@ -27,6 +27,7 @@ let Dom = function(){
         if (input == value){
             this.on();
         }else{
+            console.log('---сигнал отмены---');
             this.off();
         }
     },
@@ -34,6 +35,7 @@ let Dom = function(){
     this.on = function(){
         status = true;
         console.log('Открыто');
+        console.log('Входите');
     },
 
     this.off = function(){
