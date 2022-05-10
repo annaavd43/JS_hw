@@ -1,0 +1,36 @@
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__small {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery__small img{
+    width: 20%;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.gallery__big {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.gallery__big img {
+    width: 50%;
+}
+
+.gallery__close {
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(45deg);
+    border: 0;
+    background-color: transparent;
+    font-size: 40px;
+}
