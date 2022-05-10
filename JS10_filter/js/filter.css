@@ -1,0 +1,59 @@
+.title {
+    margin-left: 75px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.buttons {
+    margin-left: 75px;
+}
+
+.btn {
+    border: 0;
+
+    padding: 10px;
+    margin: 10px 0;
+
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: rgb(202, 192, 192);
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content h3 {
+    margin: 15px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.nature,
+.cars,
+.people {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px ;
+}
+
+.nature img,
+.cars img,
+.people img {
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(94, 88, 88);
+    color: #fff;
+}
